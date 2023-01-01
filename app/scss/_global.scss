@@ -1,0 +1,25 @@
+html, body {
+  height: 100%; // ?From footer sticky in the end pages
+}
+
+
+body {
+  // * write fz ff colorfont
+  display: flex; // ?From footer sticky in the end pages
+  flex-direction: column; // ?From footer sticky in the end pages
+
+}
+
+main {
+  flex-grow: 1; // ?From footer sticky in the end pages
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
