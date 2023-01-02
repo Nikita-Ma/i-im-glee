@@ -1,6 +1,7 @@
 @import "vars";
 @import "fonts";
 @import "reset";
+@import "libs";
 @import "global";
 
 .header {
@@ -272,6 +273,89 @@ footer {
       position: relative;
       left: -15px;
     }
+  }
+}
+
+.top-slider {
+  margin-top: 55px;
+
+  .container {
+    background-color: $delicatebrown;
+    padding: 0;
+  }
+
+  &__container {
+    max-width: 1770px;
+  }
+
+  &__item {
+    display: flex !important;
+    justify-content: space-between;
+    padding: 225px 300px 260px 300px;
+  }
+
+  &__img {
+    width: 640px;
+    height: 260px;
+
+  }
+
+  &__title {
+    @extend %rubik-500;
+    font-size: 72px;
+    line-height: 70px;
+    color: #243f4d;
+  }
+
+  &__text {
+    margin-top: 40px;
+    @extend %rubik-400;
+    line-height: 30px;
+    font-size: 18px;
+    color: #436372;
+  }
+
+  &__btn {
+    width: 200px;
+    height: 60px;
+    display: flex;
+    padding-left: 30px;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 40px;
+    background-color: #a3bbc8;
+    position: relative;
+    color: white;
+    @extend %rubik-400;
+
+    &::after {
+      content: '';
+      position: absolute;
+      right: 20px;
+      background-image: url('../images/top-arrow.png');
+      width: 22px;
+      height: 9px;
+    }
+  }
+
+  .slick-dots {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 45px;
+
+    li  {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 30px;
+      height: 30px;
+      margin-left: 12px;
+      background-color: #fde3cc;
+      border-radius: 50%;
+    }
+  .slick-active {
+    background-color: #fff;
+  }
   }
 }
 
